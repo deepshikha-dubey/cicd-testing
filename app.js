@@ -10,3 +10,9 @@ app.get('/health', (req, res) => {
 });
 
 module.exports = app;
+
+// # Simple js version  code
+
+app.get('/version', (req, res) => {
+  res.json({ version: '1.0.0' });
+});
